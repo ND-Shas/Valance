@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-white: #ffffff;
+    --color-white-10: rgba(255, 255, 255, 0.1);
+    --color-bark-green: #4a4f32;
+    --color-field-green: #9c9873;
+    --color-ivory: #edece8;
+    --color-sand: #b59972;
+    --color-terracotta: #a54d25;
+    --color-black: #0f0f0f;
+    --color-soft-black: #1d150c;
+    --color-orange: #fa712a;
+    --color-orange-30: rgba(250, 113, 42, 0.3);
+    --color-ivory-10: rgba(237, 236, 232, 0.1);
+    --color-ivory-30: rgba(237, 236, 232, 0.3);
+    --color-soft-black-10: rgba(29, 21, 12, 0.1);
+    --color-soft-black-30: rgba(29, 21, 12, 0.3);
+    --color-soft-black-50: rgba(29, 21, 12, 0.5);
+    --color-soft-black-70: rgba(29, 21, 12, 0.7);
+    --font-sans: 'Host Grotesk', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-serif: 'Cinzel', Georgia, serif;
+    --timing-fast: 0.25s;
+    --timing-default: 0.4s;
+    --timing-slow: 0.75s;
+    --easing-out: cubic-bezier(0.16, 1, 0.3, 1);
+    --easing-in-out: cubic-bezier(0.65, 0.05, 0.36, 1);
+  }
+
+  body {
+    background-color: var(--color-ivory);
+    color: var(--color-soft-black);
+    font-family: var(--font-sans);
+    line-height: 1.25;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    user-select: text;
+  }
+
+  ::selection {
+    background-color: var(--color-orange-30);
+    color: var(--color-soft-black);
+  }
+}
+
+/* Custom scrollbar hiding for horizontal smooth experience */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Editorial display typography */
+.font-editorial-serif {
+  font-family: var(--font-serif);
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+}
+
+.font-editorial-sans {
+  font-family: var(--font-sans);
+}
+
+/* Animations */
+@keyframes pulseSubtle {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.9;
+  }
+  50% {
+    transform: scale(1.08);
+    opacity: 0.6;
+  }
+}
+
+.animate-pulse-subtle {
+  animation: pulseSubtle 3s ease-in-out infinite;
+}
+
+@keyframes breathExpand {
+  0%, 100% {
+    transform: scale(0.65);
+    opacity: 0.4;
+  }
+  40% {
+    transform: scale(1.15);
+    opacity: 0.9;
+  }
+  60% {
+    transform: scale(1.15);
+    opacity: 0.9;
+  }
+}
+
+.animate-breath {
+  animation: breathExpand 12s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
