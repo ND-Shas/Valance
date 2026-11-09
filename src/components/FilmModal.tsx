@@ -57,16 +57,16 @@ export const FilmModal: React.FC<FilmModalProps> = ({ isOpen, onClose }) => {
       <div className="w-full flex items-center justify-between z-10">
         <div>
           <span className="text-xs uppercase font-mono tracking-[0.25em] text-[#a54d25] font-semibold">
-            Blandina Short Film
+            Valence Engineering Film
           </span>
           <h4 className="text-lg font-editorial-serif font-semibold">
-            From The Inside Out
+            Architecture in Motion
           </h4>
         </div>
         <button
           type="button"
           onClick={onClose}
-          className="w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition-colors text-sm"
+          className="w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition-colors text-sm cursor-pointer"
           aria-label="Close film"
         >
           ✕

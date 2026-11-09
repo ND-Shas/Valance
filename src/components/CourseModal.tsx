@@ -56,20 +56,24 @@ export const CourseModal: React.FC<CourseModalProps> = ({ course, onClose, onOpe
 
           <div className="p-5 rounded-2xl bg-white/60 border border-[#1d150c]/10 space-y-3">
             <h4 className="text-xs font-mono uppercase tracking-widest text-[#a54d25] font-semibold">
-              What This Practice Cultivates
+              Key Architectural Deliverables
             </h4>
             <ul className="text-xs sm:text-sm font-light text-[#1d150c]/80 space-y-2">
               <li className="flex items-center gap-2">
                 <span className="text-[#a54d25] font-bold">✓</span>
-                Deep physiological nervous system regulation
+                Custom candidate pipelines and automated status workflows
               </li>
               <li className="flex items-center gap-2">
                 <span className="text-[#a54d25] font-bold">✓</span>
-                Subtle body alignment and breath-synchronized posture
+                Sub-60s multi-channel alerts (WhatsApp, Email & Webhook integrations)
               </li>
               <li className="flex items-center gap-2">
                 <span className="text-[#a54d25] font-bold">✓</span>
-                Cultivating resilient awareness under modern pressure
+                Full code & database ownership with zero recurring per-user seat fees
+              </li>
+              <li className="flex items-center gap-2">
+                <span className="text-[#a54d25] font-bold">✓</span>
+                7–14 days rapid deployment with hands-on team onboarding
               </li>
             </ul>
           </div>
@@ -81,18 +85,13 @@ export const CourseModal: React.FC<CourseModalProps> = ({ course, onClose, onOpe
                 onClose();
                 onOpenMeet();
               }}
-              className="w-full sm:w-auto px-8 py-3.5 rounded-full bg-[#1d150c] text-[#edece8] hover:bg-[#a54d25] transition-all duration-300 text-sm font-medium shadow-md hover:scale-105 active:scale-95"
+              className="w-full sm:w-auto px-8 py-3.5 rounded-full bg-[#1d150c] text-[#edece8] hover:bg-[#a54d25] transition-all duration-300 text-sm font-medium shadow-md hover:scale-105 active:scale-95 cursor-pointer"
             >
-              Inquire About Joining
+              Request Solution Demo
             </button>
-            <a
-              href="https://blandina.org/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-xs font-mono text-[#1d150c]/70 hover:text-[#a54d25] transition-colors"
-            >
-              Learn more on blandina.org ↗
-            </a>
+            <span className="text-xs font-mono text-[#1d150c]/70">
+              Direct consultation with founders · No pitch decks
+            </span>
           </div>
         </div>
       </div>

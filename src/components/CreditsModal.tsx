@@ -31,57 +31,47 @@ export const CreditsModal: React.FC<CreditsModalProps> = ({ isOpen, onClose }) =
         <div className="space-y-6">
           <div>
             <span className="text-xs uppercase font-mono tracking-[0.25em] text-[#a54d25] font-semibold">
-              Project Credits
+              Systems Specifications
             </span>
             <h3 className="text-2xl font-editorial-serif font-bold text-[#1d150c] mt-1">
-              From FPTP to Blandina
+              Valence Architecture
             </h3>
           </div>
 
           <div className="space-y-4 text-sm font-light text-[#1d150c]/80 divide-y divide-[#1d150c]/10">
             <div className="pt-2 flex justify-between items-baseline">
-              <span className="font-mono text-xs text-[#1d150c]/50 uppercase">Art Direction & Design</span>
-              <a
-                href="https://fptp.studio"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="font-medium hover:text-[#a54d25] transition-colors"
-              >
-                FPTP Studio ↗
-              </a>
+              <span className="font-mono text-xs text-[#1d150c]/50 uppercase">Architecture & Engineering</span>
+              <span className="font-medium text-[#1d150c]">
+                Valence Core Tech Team
+              </span>
             </div>
 
             <div className="pt-3 flex justify-between items-baseline">
-              <span className="font-mono text-xs text-[#1d150c]/50 uppercase">Creative Development</span>
-              <a
-                href="https://marea-studio.it"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="font-medium hover:text-[#a54d25] transition-colors"
-              >
-                Marea Studio ↗
-              </a>
+              <span className="font-mono text-xs text-[#1d150c]/50 uppercase">Frontend Engine</span>
+              <span className="font-medium text-[#1d150c]">
+                React 18 · TypeScript · Tailwind CSS
+              </span>
             </div>
 
             <div className="pt-3 flex justify-between items-baseline">
-              <span className="font-mono text-xs text-[#1d150c]/50 uppercase">Concept & Practice</span>
-              <span className="font-medium">Blandina Stecca</span>
+              <span className="font-mono text-xs text-[#1d150c]/50 uppercase">Backend & Automation</span>
+              <span className="font-medium text-[#1d150c]">Node.js · Webhooks · Serverless Edge</span>
             </div>
 
             <div className="pt-3 flex justify-between items-baseline">
-              <span className="font-mono text-xs text-[#1d150c]/50 uppercase">Sound & Atmosphere</span>
-              <span className="font-medium">FPTP Sound & Synthetics</span>
+              <span className="font-mono text-xs text-[#1d150c]/50 uppercase">Database & Integrations</span>
+              <span className="font-medium text-[#1d150c]">PostgreSQL · WhatsApp API · Email Dispatch</span>
             </div>
 
             <div className="pt-3 flex justify-between items-baseline">
-              <span className="font-mono text-xs text-[#1d150c]/50 uppercase">Industry Recognition</span>
-              <span className="font-medium text-[#a54d25]">Awwwards & CSSDA Nominee</span>
+              <span className="font-mono text-xs text-[#1d150c]/50 uppercase">Deployment Speed</span>
+              <span className="font-medium text-[#a54d25]">7–14 Days Production Ready</span>
             </div>
           </div>
 
           <div className="pt-4 border-t border-[#1d150c]/10 text-center">
             <p className="text-xs text-[#1d150c]/60">
-              Created with devotion to bodily presence, mindfulness, and digital craftsmanship.
+              Built with precision engineering, clean architecture, and zero bloated vendor lock-in.
             </p>
           </div>
         </div>

@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'Libertinus Sans';
+  src: local('Libertinus Sans Regular'), local('Libertinus Sans');
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
 @layer base {
   :root {
     --color-white: #ffffff;
@@ -20,7 +28,7 @@
     --color-soft-black-50: rgba(29, 21, 12, 0.5);
     --color-soft-black-70: rgba(29, 21, 12, 0.7);
     --font-sans: 'Host Grotesk', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
-    --font-serif: 'Cinzel', Georgia, serif;
+    --font-serif: 'Libertinus Sans', 'Cinzel', 'Playfair Display', Georgia, serif;
     --timing-fast: 0.25s;
     --timing-default: 0.4s;
     --timing-slow: 0.75s;
@@ -45,6 +53,29 @@
     background-color: var(--color-orange-30);
     color: var(--color-soft-black);
   }
+
+  @media (hover: hover) and (pointer: fine) {
+    body, a, button, [role="button"], input, select, textarea {
+      cursor: none !important;
+    }
+  }
+}
+
+@keyframes slowWaveDrift {
+  0% {
+    transform: scale(1.03) translate(0, 0);
+  }
+  50% {
+    transform: scale(1.07) translate(-1.2%, 1%);
+  }
+  100% {
+    transform: scale(1.04) translate(1%, -0.8%);
+  }
+}
+
+.animate-wave-drift {
+  animation: slowWaveDrift 14s ease-in-out infinite alternate;
+  will-change: transform;
 }
 
 /* Custom scrollbar hiding for horizontal smooth experience */

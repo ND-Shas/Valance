@@ -1,5 +1,5 @@
 import React from 'react';
-import { BlandinaWordmark } from './BlandinaWordmark';
+import { ValenceWordmark } from './ValenceWordmark';
 import { soundEngine } from '../utils/audioEngine';
 
 interface MenuModalProps {
@@ -39,8 +39,12 @@ export const MenuModal: React.FC<MenuModalProps> = ({
     >
       {/* Top Bar inside Menu */}
       <div className="w-full flex items-center justify-between border-b border-white/10 pb-6">
-        <div className="w-full max-w-[180px] sm:max-w-[220px]">
-          <BlandinaWordmark color="#edece8" className="w-full" />
+        <div className="flex items-center">
+          <img
+            src="/assets/logo-dark.png"
+            alt="VALENCE Info Tech Solutions"
+            className="h-9 sm:h-11 w-auto object-contain filter drop-shadow-[0_2px_12px_rgba(250,113,42,0.2)]"
+          />
         </div>
         <button
           type="button"

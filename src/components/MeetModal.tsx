@@ -12,7 +12,7 @@ export const MeetModal: React.FC<MeetModalProps> = ({ isOpen, onClose }) => {
     <div
       role="dialog"
       aria-modal="true"
-      aria-label="Meet Blandina Stecca"
+      aria-label="Direct Architecture - VALENCE"
       className="fixed inset-0 z-50 bg-[#1a1109]/90 backdrop-blur-xl flex items-center justify-center p-4 sm:p-6 md:p-10 select-none animate-fadeIn overflow-y-auto"
     >
       <div
@@ -23,8 +23,8 @@ export const MeetModal: React.FC<MeetModalProps> = ({ isOpen, onClose }) => {
         <button
           type="button"
           onClick={onClose}
-          className="absolute top-6 right-6 w-10 h-10 rounded-full bg-[#1d150c]/5 hover:bg-[#1d150c]/15 text-[#1d150c] flex items-center justify-center transition-colors"
-          aria-label="Close biography modal"
+          className="absolute top-6 right-6 w-10 h-10 rounded-full bg-[#1d150c]/5 hover:bg-[#1d150c]/15 text-[#1d150c] flex items-center justify-center transition-colors cursor-pointer"
+          aria-label="Close architecture modal"
         >
           ✕
         </button>
@@ -35,68 +35,64 @@ export const MeetModal: React.FC<MeetModalProps> = ({ isOpen, onClose }) => {
             <div className="relative w-full aspect-[4/5] rounded-2xl overflow-hidden shadow-xl border border-[#1d150c]/10">
               <img
                 src="/intro.jpg"
-                alt="Blandina Stecca"
+                alt="VALENCE Founders"
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="mt-4 text-center">
-              <span className="text-xs font-mono uppercase tracking-widest text-[#a54d25] font-semibold">
-                Founder & Teacher
+            <div className="mt-4 text-center space-y-1">
+              <span className="text-[11px] font-mono uppercase tracking-widest text-[#a54d25] font-semibold block">
+                Founding Leadership
               </span>
-              <h3 className="text-xl font-editorial-serif font-bold text-[#1d150c]">
-                Blandina Stecca
+              <h3 className="text-base font-serif font-bold text-[#1d150c]">
+                Shivang Mishra & Shashank Mishra
               </h3>
+              <p className="text-[11px] font-mono text-[#1d150c]/60">
+                VALENCE Architecture Studio
+              </p>
             </div>
           </div>
 
           {/* Bio & Details Column */}
-          <div className="md:col-span-7 space-y-5">
-            <div className="space-y-2">
+          <div className="md:col-span-7 space-y-4">
+            <div className="space-y-1.5">
               <span className="text-xs uppercase font-mono tracking-[0.25em] text-[#a54d25] font-semibold">
-                About the Teacher
+                Technology That Moves Business
               </span>
-              <h2 className="text-2xl sm:text-3xl font-light text-[#1d150c] font-editorial-sans leading-tight">
-                “Everything begins within.”
+              <h2 className="text-xl sm:text-2xl font-light text-[#1d150c] font-serif leading-snug">
+                “Software should adapt to your business, not the other way around.”
               </h2>
             </div>
 
-            <p className="text-sm sm:text-base font-light text-[#1d150c]/80 leading-relaxed">
-              I am Blandina Stecca, a certified yoga and mindfulness guide based between Padua and the Dolomites. My practice bridges ancient somatic wisdom with contemporary awareness, guiding students to connect with their inner rhythm, cultivate deep presence, and consciously shape their lives.
+            <p className="text-xs sm:text-sm font-light text-[#1d150c]/80 leading-relaxed font-editorial-sans">
+              VALENCE is a business technology studio, focused on custom software, CRM platforms, workflow automation, and connected business systems. We work at the intersection of business operations and engineering — translating complex workflows into software that is practical, intuitive, and built for real-world execution.
             </p>
 
-            <p className="text-sm sm:text-base font-light text-[#1d150c]/80 leading-relaxed">
-              Whether through private retreats in the Italian Alps, weekly studio sessions in Padua, or worldwide digital circles, each gathering is an open space to listen, breathe, and begin anew.
-            </p>
+            <div className="p-3 rounded-xl bg-white/70 border border-[#1d150c]/10 text-xs font-mono space-y-1 text-[#1d150c]/85">
+              <p className="text-[#a54d25] font-semibold uppercase tracking-wider text-[10px]">Delivery Roadmap:</p>
+              <p>01 Discover ➔ 02 Architect ➔ 03 Engineer ➔ 04 Deploy ➔ 05 Evolve</p>
+            </div>
 
             {/* Direct Contacts & Location Strip */}
-            <div className="pt-4 border-t border-[#1d150c]/10 grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs font-mono text-[#1d150c]/70">
+            <div className="pt-3 border-t border-[#1d150c]/10 grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs font-mono text-[#1d150c]/70">
               <div>
-                <p className="text-[#a54d25] font-semibold uppercase tracking-wider text-[10px]">Locations</p>
-                <p className="mt-0.5">Padua, Dolomites & Online</p>
+                <p className="text-[#a54d25] font-semibold uppercase tracking-wider text-[10px]">Studio Architecture</p>
+                <p className="mt-0.5 text-[#1d150c] font-medium">VALENCE Systems</p>
               </div>
               <div>
-                <p className="text-[#a54d25] font-semibold uppercase tracking-wider text-[10px]">Email</p>
-                <a href="mailto:blandina.stecca@gmail.com" className="hover:text-[#a54d25] transition-colors mt-0.5 block">
-                  blandina.stecca@gmail.com
-                </a>
+                <p className="text-[#a54d25] font-semibold uppercase tracking-wider text-[10px]">Discovery Contact</p>
+                <span className="text-[#1d150c] font-medium mt-0.5 block">
+                  Shivang Mishra (CEO)
+                </span>
               </div>
               <div>
-                <p className="text-[#a54d25] font-semibold uppercase tracking-wider text-[10px]">Telephone</p>
-                <a href="tel:+393515545728" className="hover:text-[#a54d25] transition-colors mt-0.5 block">
-                  +39 351 554 5728
-                </a>
+                <p className="text-[#a54d25] font-semibold uppercase tracking-wider text-[10px]">Core Verticals</p>
+                <p className="mt-0.5">Recruitment & Agencies</p>
               </div>
               <div>
-                <p className="text-[#a54d25] font-semibold uppercase tracking-wider text-[10px]">Main Website</p>
-                <a
-                  href="https://blandina.org/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-[#a54d25] transition-colors mt-0.5 inline-flex items-center gap-1 font-sans font-semibold text-[#1d150c]"
-                >
-                  <span>blandina.org</span>
-                  <span>↗</span>
-                </a>
+                <p className="text-[#a54d25] font-semibold uppercase tracking-wider text-[10px]">Technology Lead</p>
+                <span className="text-[#1d150c] font-medium mt-0.5 block">
+                  Shashank Mishra (CTO)
+                </span>
               </div>
             </div>
           </div>

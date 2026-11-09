@@ -103,11 +103,11 @@ export const BreathGuideModal: React.FC<BreathGuideModalProps> = ({ isOpen, onCl
         </button>
 
         <span className="text-xs uppercase font-mono tracking-[0.3em] text-[#a54d25] font-semibold mb-3">
-          Take a moment for yourself
+          Focus & Clarity Moment
         </span>
 
         <h3 className="text-2xl sm:text-3xl font-light font-editorial-sans tracking-wide">
-          Somatic Breathwork
+          Cognitive Reset
         </h3>
 
         {/* Dynamic Expanding/Contracting Breathing Ring */}
